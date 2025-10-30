@@ -14,11 +14,15 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.RadioButton
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 
 
 @Composable
@@ -43,7 +47,7 @@ fun FormatDataDiri(modifier: Modifier){
             singleLine = true,
             shape = MaterialTheme.shapes.large,
             modifier = Modifier.width(width =250.dp),
-            label = { Text(text = "Nama Lengkap") },
+            label = { Text( text = "Nama Lengkap")},
             onValueChange = {
                 textNama = it
             }
@@ -80,7 +84,20 @@ fun FormatDataDiri(modifier: Modifier){
                 bottom = dimensionResource(id = R.dimen.padding_medium),
                 top = dimensionResource(id = R.dimen.padding_medium)
             ),
+            thickness = dimensionResource(id = R.dimen.dividing_tipis),
+            color = Color.DarkGray
         )
+        Button(
+            modifier = Modifier.fillMaxWidth(fraction = 1f),
+            enabled = textAlamat.isNotEmpty(),
+            onClick = {
+                nama=textNama
+                jenis=textJK
+                alamat=textAlamat
+            }
+        ) {
+            Text(text = stringResource(id = R.string.submit))
+        }
     }
 
 }
