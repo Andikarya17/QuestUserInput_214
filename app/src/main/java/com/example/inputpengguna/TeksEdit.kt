@@ -1,6 +1,7 @@
 package com.example.inputpengguna
 
 import android.R
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -25,5 +26,6 @@ fun FormatDataDiri(modifier: Modifier){
     val gender: List<R.string> = listOf("Laki-Laki", "Perempuan")
 
     Column(modifier = Modifier.padding(top = 50.dp),
+        verticalArrangement = Arrangement.Top,
 
 }
