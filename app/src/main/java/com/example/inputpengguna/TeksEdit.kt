@@ -16,8 +16,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.RadioButton
-
+import androidx.compose.ui.res.dimensionResource
 
 
 @Composable
@@ -73,6 +74,12 @@ fun FormatDataDiri(modifier: Modifier){
             onValueChange = {
                 textAlamat = it
             }
+        )
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(id = R.dimen.padding_medium),
+                top = dimensionResource(id = R.dimen.padding_medium)
+            ),
         )
     }
 
