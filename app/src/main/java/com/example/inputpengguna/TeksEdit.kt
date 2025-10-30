@@ -1,10 +1,14 @@
 package com.example.inputpengguna
 
 import android.R
+import androidx.compose.foundation.layout.Column
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import androidx.compose.foundation.layout.padding
+
 
 @Composable
 fun FormatDataDiri(modifier: Modifier){
@@ -19,4 +23,7 @@ fun FormatDataDiri(modifier: Modifier){
     var jenis by remember {mutableStateOf("") }
 
     val gender: List<R.string> = listOf("Laki-Laki", "Perempuan")
+
+    Column(modifier = Modifier.padding(top = 50.dp),
+
 }
