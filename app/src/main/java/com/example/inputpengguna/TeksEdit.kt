@@ -7,5 +7,7 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun FormatDataDiri(modifier: Modifier){
+    //variabel-variabel untuk mengingat nilai masukan dari keyboard
     var textNama by remember { mutableStateOf("") }
+    var textAlamat by remember { mutableStateOf("") }
 }
