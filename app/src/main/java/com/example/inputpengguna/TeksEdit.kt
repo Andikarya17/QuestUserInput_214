@@ -16,7 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.RadioButton
-import androidx.compose.ui.Alignment
+
 
 @Composable
 fun FormatDataDiri(modifier: Modifier){
@@ -30,7 +30,7 @@ fun FormatDataDiri(modifier: Modifier){
     var alamat by remember {mutableStateOf("") }
     var jenis by remember {mutableStateOf("") }
 
-    val gender: List<R.string> = listOf("Laki-Laki", "Perempuan")
+    val gender: List<String> = listOf("Laki-Laki", "Perempuan")
 
     Column(modifier = Modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
