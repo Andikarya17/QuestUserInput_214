@@ -107,6 +107,18 @@ fun FormatPendaftaran(modifier: Modifier) {
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(20.dp))
+
+                // Tombol Submit
+                Button(
+                    onClick = { /* aksi nanti bisa ditambah */ },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF512DA8))
+                ) {
+                    Text("Submit")
+                }
 
             }
         }
