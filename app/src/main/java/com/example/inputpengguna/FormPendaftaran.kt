@@ -43,4 +43,15 @@ fun FormatPendaftaran(modifier: Modifier) {
         )
         Spacer(modifier = Modifier.height(20.dp))
 
+        ElevatedCard(
+            colors = CardDefaults.cardColors(containerColor = Color.White),
+            elevation = CardDefaults.elevatedCardElevation(4.dp),
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Column(modifier = Modifier.padding(20.dp)) {
+
+            }
+        }
+
+
     }}
