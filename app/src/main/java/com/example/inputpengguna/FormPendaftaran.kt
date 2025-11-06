@@ -19,4 +19,8 @@ fun FormatPendaftaran(modifier: Modifier) {
     var textAlamat by remember { mutableStateOf("") }
     var textJK by remember { mutableStateOf("") }
     var textStatus by remember { mutableStateOf("") }
+
+    val gender = listOf("Laki-Laki", "Perempuan")
+    val status = listOf("Janda", "Lajang", "Duda")
+
 }
