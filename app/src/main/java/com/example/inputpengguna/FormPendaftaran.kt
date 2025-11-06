@@ -78,6 +78,25 @@ fun FormatPendaftaran(modifier: Modifier) {
                 }
                 Spacer(modifier = Modifier.height(8.dp))
 
+                Text(text = "STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
+                status.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .selectable(
+                                selected = (textStatus == item),
+                                onClick = { textStatus = item }
+                            )
+                            .padding(vertical = 4.dp)
+                    ) {
+                        RadioButton(
+                            selected = (textStatus == item),
+                            onClick = { textStatus = item }
+                        )
+                        Text(text = item)
+                    }
+                }
+
             }
         }
 
