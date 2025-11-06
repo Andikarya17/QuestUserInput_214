@@ -41,5 +41,6 @@ fun FormatPendaftaran(modifier: Modifier) {
                 .padding(vertical = 20.dp),
             textAlign = TextAlign.Center
         )
+        Spacer(modifier = Modifier.height(20.dp))
 
     }}
