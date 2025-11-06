@@ -58,6 +58,24 @@ fun FormatPendaftaran(modifier: Modifier) {
                     modifier = Modifier.fillMaxWidth()
                 )
                 Spacer(modifier = Modifier.height(16.dp))
+                Text(text = "JENIS KELAMIN", fontWeight = FontWeight.SemiBold)
+                gender.forEach { item ->
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .selectable(
+                                selected = (textJK == item),
+                                onClick = { textJK = item }
+                            )
+                            .padding(vertical = 4.dp)
+                    ) {
+                        RadioButton(
+                            selected = (textJK == item),
+                            onClick = { textJK = item }
+                        )
+                        Text(text = item)
+                    }
+                }
 
             }
         }
