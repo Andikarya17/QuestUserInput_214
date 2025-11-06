@@ -96,6 +96,17 @@ fun FormatPendaftaran(modifier: Modifier) {
                         Text(text = item)
                     }
                 }
+                Spacer(modifier = Modifier.height(8.dp))
+
+                // Alamat
+                Text(text = "ALAMAT", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = textAlamat,
+                    onValueChange = { textAlamat = it },
+                    label = { Text("Alamat") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
 
             }
         }
