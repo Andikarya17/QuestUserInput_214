@@ -23,4 +23,12 @@ fun FormatPendaftaran(modifier: Modifier) {
     val gender = listOf("Laki-Laki", "Perempuan")
     val status = listOf("Janda", "Lajang", "Duda")
 
-}
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFE9D8FD))
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+    }
