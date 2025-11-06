@@ -15,5 +15,5 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormatPendaftaran(modifier: Modifier) {
-
+    var textNama by remember { mutableStateOf("") }
 }
