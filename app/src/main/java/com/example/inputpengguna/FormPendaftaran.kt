@@ -49,6 +49,14 @@ fun FormatPendaftaran(modifier: Modifier) {
             modifier = Modifier.fillMaxWidth()
         ) {
             Column(modifier = Modifier.padding(20.dp)) {
+                Text(text = "NAMA LENGKAP", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = textNama,
+                    onValueChange = { textNama = it },
+                    label = { Text("Isian nama lengkap") },
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
+                )
 
             }
         }
