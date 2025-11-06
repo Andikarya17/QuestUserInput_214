@@ -57,6 +57,7 @@ fun FormatPendaftaran(modifier: Modifier) {
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(16.dp))
 
             }
         }
