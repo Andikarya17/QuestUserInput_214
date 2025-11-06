@@ -9,6 +9,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.inputpengguna.ui.theme.InputPenggunaTheme
+import com.example.inputpengguna.ui.FormPendaftaran
+
+
+
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +26,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     // 🔹 Panggil composable kamu di sini
-                    FormatDataDiri(modifier = Modifier)
+                    FormPendaftaran(modifier = Modifier)
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.example.inputpengguna
+package com.example.inputpengguna.ui
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun FormatPendaftaran(modifier: Modifier) {
+fun FormPendaftaran(modifier: Modifier) {
     var textNama by remember { mutableStateOf("") }
     var textAlamat by remember { mutableStateOf("") }
     var textJK by remember { mutableStateOf("") }
