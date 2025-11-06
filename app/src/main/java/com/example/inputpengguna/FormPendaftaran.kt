@@ -76,6 +76,7 @@ fun FormatPendaftaran(modifier: Modifier) {
                         Text(text = item)
                     }
                 }
+                Spacer(modifier = Modifier.height(8.dp))
 
             }
         }
